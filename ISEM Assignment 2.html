@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Case</title>
@@ -16,13 +16,13 @@
     <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
     <li><a data-toggle="tab" href="#Login">Login</a></li>
     <li><a data-toggle="tab" href="#Register">Register</a></li>
-    <li><a data-toggle="tab" href="#Exit">Exit</a></li>
+    
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
       <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Well Come to Harrisburg University Graduation Fair </p>
     </div>
     <div id="Login" class="tab-pane fade">
       <h3>Login</h3>
@@ -41,6 +41,8 @@
 
 </body>
 </html>
+
+
 
 
 </body>
@@ -106,6 +108,7 @@
   <h2>All graduating students must RSVP by Login/Register with HU/Personal email please use the bellow link </h2>
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-default btn-lg" id="myBtn">Login/Register</button>
+ <button type="button" class="btn btn-default btn-lg" id="myBtn">Enter name </button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -154,3 +157,23 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+ 
+<p>
+
+  Enter Name</p>
+<p>Name: <input type="text" ng-model="name"></p>
+<p ng-bind="name"></p>
+
+</div>
+
+</body>
+</html>
+
